@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>数据欺骗博物馆 - 视觉拆解</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 动态背景 -->
+    <div class="aurora-bg"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- 1. 欢迎页 -->
+    <div id="landing-page">
+        <div class="landing-content">
+            <p class="landing-kicker">DATA DECEPTION MUSEUM · 视觉拆解展</p>
+            <h1 class="landing-title">数据欺骗博物馆</h1>
+            <p class="landing-desc">数据从不说谎，但会被人利用。<br>在这里，我们将用最真实的宏观数据，为你复刻那些经典的视觉欺骗手法。</p>
+            <button class="enter-btn" id="enter-btn">立即进入</button>
+            <p class="landing-stats">10 组真实宏观数据 · 5 类视觉欺骗手法 · 一键还原真相</p>
+        </div>
+    </div>
+
+    <!-- 2. 主应用 -->
+    <div id="museum-app">
+        <main class="main-content">
+            <!-- 顶部品牌栏 -->
+            <div class="topbar animate-fade-up">
+                <div class="brand-inline">
+                    <h1>数据欺骗博物馆</h1>
+                    <p>Data Deception Museum</p>
+                </div>
+            </div>
+
+            <!-- 0. 展览总览（核心结论与关键指标） -->
+            <section class="summary-board animate-fade-up">
+                <div class="summary-head">
+                    <h3>展览总览 · 核心结论</h3>
+                    <p>数据从不说谎——以下结论提炼自全部 10 组真实宏观数据案例</p>
+                </div>
+                <div class="kpi-row">
+                    <div class="glass-card kpi-card">
+                        <span class="kpi-value">10</span>
+                        <span class="kpi-label">真实欺骗案例</span>
+                    </div>
+                    <div class="glass-card kpi-card">
+                        <span class="kpi-value">5</span>
+                        <span class="kpi-label">视觉手法类别</span>
+                    </div>
+                    <div class="glass-card kpi-card">
+                        <span class="kpi-value">3</span>
+                        <span class="kpi-label">难度分级</span>
+                    </div>
+                    <div class="glass-card kpi-card">
+                        <span class="kpi-value">100%</span>
+                        <span class="kpi-label">数据真实可溯源</span>
+                    </div>
+                </div>
+                <div class="takeaway-grid">
+                    <div class="glass-card takeaway-card">
+                        <div class="takeaway-top">
+                            <span class="takeaway-dot" style="--dot:#2563eb"></span>
+                            <span class="takeaway-name">坐标轴陷阱</span>
+                            <span class="takeaway-count">3 例</span>
+                        </div>
+                        <p class="takeaway-text">截断起点、倒置方向、压缩时间间距，即可让 GDP 六年 35% 的增长看起来像翻了几倍，或让下降曲线瞬间"恶化飙升"。</p>
+                    </div>
+                    <div class="glass-card takeaway-card">
+                        <div class="takeaway-top">
+                            <span class="takeaway-dot" style="--dot:#8b5cf6"></span>
+                            <span class="takeaway-name">感知欺骗</span>
+                            <span class="takeaway-count">4 例</span>
+                        </div>
+                        <p class="takeaway-text">双轴对齐、画布拉伸、半径编码与 3D 透视都在利用视觉盲区：占比仅 21.7% 的"居住"，在 3D 前端看似超过 30%。</p>
+                    </div>
+                    <div class="glass-card takeaway-card">
+                        <div class="takeaway-top">
+                            <span class="takeaway-dot" style="--dot:#f59e0b"></span>
+                            <span class="takeaway-name">叙事框架</span>
+                            <span class="takeaway-count">1 例</span>
+                        </div>
+                        <p class="takeaway-text">只截取 2020–2022 年，油价像一路暴涨；拉长到 25 年完整周期，那不过是剧烈震荡中的一个小波峰。</p>
+                    </div>
+                    <div class="glass-card takeaway-card">
+                        <div class="takeaway-top">
+                            <span class="takeaway-dot" style="--dot:#10b981"></span>
+                            <span class="takeaway-name">分类操纵</span>
+                            <span class="takeaway-count">1 例</span>
+                        </div>
+                        <p class="takeaway-text">把第三产业合并成一个区块就显得"一家独大"，拆细后则是内部高度分散——总面积不变，故事完全反转。</p>
+                    </div>
+                    <div class="glass-card takeaway-card">
+                        <div class="takeaway-top">
+                            <span class="takeaway-dot" style="--dot:#e11d48"></span>
+                            <span class="takeaway-name">视觉编码操纵</span>
+                            <span class="takeaway-count">1 例</span>
+                        </div>
+                        <p class="takeaway-text">在 1.0 处人为切割色阶，平滑的省际能耗差异瞬间被渲染成"一半低碳、一半高耗"的撕裂图景。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 案例导航（横向） -->
+            <div class="glass-card case-nav animate-fade-up">
+                <nav id="nav-container"></nav>
+            </div>
+
+            <header class="header animate-fade-up">
+                <div class="header-title">
+                    <h2 id="exhibit-title">加载中...</h2>
+                    <span id="exhibit-category" class="badge">分类</span>
+                    <span id="exhibit-difficulty" class="badge badge-ghost">难度</span>
+                </div>
+            </header>
+            
+            <div class="content-grid animate-fade-up" style="animation-delay: 0.1s;">
+                <div class="glass-card chart-card">
+                    <div class="chart-toolbar">
+                        <span id="view-chip" class="view-chip is-misleading">误导呈现中</span>
+                        <span class="chart-hint">悬停图表可查看数值</span>
+                    </div>
+                    <div id="chart"></div>
+                </div>
+                
+                <div class="info-panel">
+                    <div class="glass-card action-card">
+                        <button id="toggle-btn" class="primary-btn is-misleading">还原真实视觉</button>
+                    </div>
+                    <div class="glass-card explain-card">
+                        <h3>💡 欺骗解构</h3>
+                        <p id="explain-text">说明文字加载中...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 引入依赖、数据文件和主逻辑文件（顺序很重要） -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="data/heatmap-panel.js"></script>
+    <script src="data/cases.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
