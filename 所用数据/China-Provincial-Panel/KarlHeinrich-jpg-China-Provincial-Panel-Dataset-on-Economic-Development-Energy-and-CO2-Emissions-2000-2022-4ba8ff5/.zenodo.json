@@ -1,0 +1,12 @@
+{
+  "title": "China Provincial Panel Dataset on Economic Development, Energy and CO2 Emissions, 2000–2022",
+  "upload_type": "dataset",
+  "description": "A balanced annual panel dataset covering 31 Chinese provincial-level administrative regions from 2000 to 2022. The release contains the Excel data file and README documentation. It is intended for empirical research on regional economic development, energy use, carbon emissions, environmental performance, and related provincial-panel applications. Users should inspect the workbook definitions, units, source notes, missing-value conventions, and regional coverage before merging it with other datasets or making causal claims.",
+  "creators": [
+    {"name": "KarlHeinrich-jpg"}
+  ],
+  "keywords": ["China", "provincial panel data", "economic development", "energy", "CO2 emissions", "environmental economics", "2000–2022"],
+  "related_identifiers": [
+    {"identifier": "https://github.com/KarlHeinrich-jpg/China-Provincial-Panel-Dataset-on-Economic-Development-Energy-and-CO2-Emissions-2000-2022", "relation": "isIdenticalTo"}
+  ]
+}
